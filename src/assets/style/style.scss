@@ -25,6 +25,9 @@
     --apple-color: #46af35;
     --ebonyClayMaterial-color: #2b2c43;
     --halfBakedMaterial-color: #87c5d5;
+
+    //My adds
+    --search-button-color: #457992;
 }
 // -------- #utilities --------
 .separator{
@@ -34,12 +37,33 @@
     max-width: 1300px;
     margin: 0 auto;
 }
+.searchBar{
+    input, button { padding: 10px; }
+    input{ width: 230px; }
+    i{ color: #fff; }
+    button { background-color: var(--search-button-color); }
+    button:hover{
+        cursor: pointer;
+        filter: opacity(0.9);
+    }
+}
+a.typeButtonRose{
+    color: #fff;
+    padding: 15px;
+    border-radius: 25px;
+    font-weight: 700;
+    background-color: var(--coralRed-color);
+}
 // -------- #generals --------
 img{
     max-width: 100%;
 }
 i,a:hover {
     cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: black;
 }
 // -------- #content --------
 body {
