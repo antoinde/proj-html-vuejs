@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <!-- HEADER -->
-    <HeaderComponent />
+    <HeaderComponent :languagesList="languagesList" :linksList="linksList"/>
     <!-- MAIN -->
     <MainComponent />
     <!-- FOOTER -->
@@ -21,6 +21,13 @@ export default {
     MainComponent,
     FooterComponent
   },
+  data() {
+    return {
+      // Header data
+      languagesList: ["English", "Italian", "Spanish"],
+      linksList: ["Home", "Pages", "Course Formats", "Courses", "Demos"]
+    }
+  }
 }
 </script>
 
