@@ -30,10 +30,20 @@
 .separator{
     border-bottom: 1px solid #e5e5e5;
 }
-
+.default-container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+// -------- #generals --------
+img{
+    max-width: 100%;
+}
+i,a:hover {
+    cursor: pointer;
+}
 // -------- #content --------
 body {
-
+    font-family: sans-serif;
 }
 #app{
 

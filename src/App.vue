@@ -4,7 +4,7 @@
     <HeaderComponent 
     :languagesList="languagesList" 
     :linksList="linksList"
-    :socials="socials"
+    :HeaderSocials="HeaderSocials"
     />
     <!-- MAIN -->
     <MainComponent />
@@ -30,7 +30,7 @@ export default {
       // Header data
       languagesList: ["English", "Italian", "Spanish"],
       linksList: ["Home", "Pages", "Course Formats", "Courses", "Demos"],
-      socials: ["fa-facebook","fa-twitter","fa-instagram","fa-linkedin","fa-google-plus","fa-youtube"]
+      HeaderSocials: ["fa-facebook","fa-twitter","fa-instagram","fa-linkedin","fa-google-plus","fa-youtube"]
     }
   }
 }
