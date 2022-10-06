@@ -29,7 +29,7 @@
         <div class="default-container"> <!-- bottom -->
             <div class="bottom">
                 <div class="logo-container">
-                    <img class="img_mslogo" src="@/assets/img/footer-logo2x-50x56.png" alt="Master Study logo">
+                    <img class="img_mslogo" src="@/assets/img/header-logo2x-50x56.png" alt="Master Study logo">
                 </div>
                 <div class="logo-text">
                     <strong>MASTER</strong> STUDY

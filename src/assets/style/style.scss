@@ -28,6 +28,7 @@
 
     //My adds
     --search-button-color: #457992;
+    --footer-nav-color: #273044;
 }
 // -------- #utilities --------
 .separator{
@@ -67,5 +68,9 @@ a{
 }
 // -------- #content --------
 body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
     font-family: sans-serif;
 }

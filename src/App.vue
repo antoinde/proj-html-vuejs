@@ -9,7 +9,9 @@
     <!-- MAIN -->
     <MainComponent />
     <!-- FOOTER -->
-    <FooterComponent />
+    <FooterComponent 
+    :FooterCards="FooterCards"
+    />
   </div>
 </template>
 
@@ -30,7 +32,29 @@ export default {
       // Header data
       languagesList: ["English", "Italian", "Spanish"],
       linksList: ["Home", "Pages", "Course Formats", "Courses", "Demos"],
-      HeaderSocials: ["fa-facebook","fa-twitter","fa-instagram","fa-linkedin","fa-google-plus","fa-youtube"]
+      HeaderSocials: ["fa-facebook","fa-twitter","fa-instagram","fa-linkedin","fa-google-plus","fa-youtube"],
+      // Footer data
+      FooterCards: {
+        about:{
+          title: 'ABOUT',
+          text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet voluptatem quasi inventore in quod commodi harum facilis aliquam ullam illum cum molestiae repudiandae debitis asperiores modi voluptatum odio, soluta quaerat.'
+        },
+        contact:{
+          title: 'CONTACT',
+          location: 'USA, California 20, First Avenue, California',
+          telephone: 'Tel.:+1 212 458 300 32',
+          fax: 'Fax.:+1 212 375 24 14',
+          email: 'info@masterstudy.com'
+        },
+        FooterSocials: {
+          title: 'SOCIAL NETWORK',
+          socials: [
+            "fa-facebook","fa-instagram","fa-linkedin","fa-pinterest","fa-twitter","fa-dribbble","fa-google-plus","fa-skype"
+          ],
+        }
+        
+        
+      }
     }
   }
 }
