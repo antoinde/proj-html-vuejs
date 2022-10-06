@@ -16,7 +16,7 @@
                 </span>
                 <!-- social network -->
                 <span>
-                    
+                    <i v-for="(social, index) in socials" :key="index" class="fa-brands" :class="social"></i>
                 </span>
             </div>
         </div>
@@ -30,7 +30,8 @@ export default {
   name: 'HeaderComponent',
   props: {
     languagesList: Array,
-    linksList: Array
+    linksList: Array,
+    socials: Array
   }
 }
 </script>

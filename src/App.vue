@@ -1,7 +1,11 @@
 <template>
   <div id="app">
     <!-- HEADER -->
-    <HeaderComponent :languagesList="languagesList" :linksList="linksList"/>
+    <HeaderComponent 
+    :languagesList="languagesList" 
+    :linksList="linksList"
+    :socials="socials"
+    />
     <!-- MAIN -->
     <MainComponent />
     <!-- FOOTER -->
@@ -25,7 +29,8 @@ export default {
     return {
       // Header data
       languagesList: ["English", "Italian", "Spanish"],
-      linksList: ["Home", "Pages", "Course Formats", "Courses", "Demos"]
+      linksList: ["Home", "Pages", "Course Formats", "Courses", "Demos"],
+      socials: ["fa-facebook","fa-twitter","fa-instagram","fa-linkedin","fa-google-plus","fa-youtube"]
     }
   }
 }
