@@ -1,6 +1,7 @@
 <template>
     <header>
-        <div class="default-container">
+        
+        <div class="default-container"> <!-- top -->
             <div class="top">
                 <!-- ###### Selettore della lingua -->
                 <div class="left">
@@ -22,13 +23,13 @@
                 </div>
             </div>
         </div>
-
-        <div class="separator"></div>
-
-        <div class="default-container">
+        
+        <div class="separator"></div> <!-- separator -->
+        
+        <div class="default-container"> <!-- bottom -->
             <div class="bottom">
                 <div class="logo-container">
-                    <img class="mslogo" src="@/assets/img/footer-logo2x-50x56.png" alt="Master Study logo">
+                    <img class="img_mslogo" src="@/assets/img/footer-logo2x-50x56.png" alt="Master Study logo">
                 </div>
                 <div class="logo-text">
                     <strong>MASTER</strong> STUDY
@@ -49,10 +50,30 @@
                         <option value="">Food & Beverage</option>
                     </select>
                 </span>
-                <div class="searchBar"></div>
-                <div class="forUsers"></div>
-                <div class="profile-area"></div>
-                <button class="addToPrefers"></button>
+                <div class="searchBar">
+                    <input type="text" placeholder="Search courses">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="forUsers">
+                    <a href="#">
+                        <i class="fa-solid fa-bullhorn"></i>
+                        <span> Become an Instructor</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span> For Enterprise</span>
+                    </a>
+                </div>
+                <div class="profile-area">
+                    <a>
+                        <i class="fa-regular fa-user"></i>
+                        <span> Log in</span>
+                    </a>
+                    <a class="typeButtonRose" href="#">SIGN UP</a>
+                    <button class="addToPrefers">
+                        <i class="fa-regular fa-bookmark"></i>
+                    </button>
+                </div>
             </div>
         </div>
     </header>
@@ -104,18 +125,22 @@ export default {
     }
 }
 .bottom {
+    position: relative;
     display: flex;
     align-items: center;
-    padding: 15px;
-    border: 1px solid black;
-    column-gap: 10px;
+    padding: 5px;
+    font-size: 0.8rem;
 
     .logo-text{
         font-size: 1.8rem;
+        margin-left: 5px;
 
         strong {
             color: var(--azure-color);
         }
+    }
+    .img_mslogo{
+        background-color: var(--coralRed-color);
     }
     .category{
         display: flex;
@@ -123,6 +148,7 @@ export default {
         border-radius: 10px;
         padding: 0 10px;
         text-align: center;
+        margin-left: -10px;
         color: rgb(105, 105, 105);
         i{
             transform: translateX(20px);
@@ -140,9 +166,27 @@ export default {
         color: rgb(105, 105, 105);
     }
     
-}
-.mslogo{
-    background-color: var(--coralRed-color);
+    .forUsers{
+         margin: 0 20px;
+         display: flex;
+         column-gap: 15px;
+    }
+    .profile-area {
+        position: absolute;
+        right: 0;
+        display: flex;
+        align-items: center;
+        column-gap: 15px;
+    }
+    button.addToPrefers{
+        background-color: #fff;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 25px;
+    }
+    button.addToPrefers:hover{
+        background-color: #e5e5e5;
+    }
 }
 
 </style>
