@@ -1,6 +1,7 @@
 <template>
     <main>
-        <nav >
+      <section>
+        <nav>
           <div class="container">
             <a>
               <span class="icon"> <i class="fa-solid fa-chart-column"></i> </span>
@@ -24,6 +25,17 @@
             </a>
           </div>
         </nav>
+        <div class="images_area">
+          <div class="split50 left">
+            <div class="colored_area"></div>
+          </div>
+          <div class="split50 right">
+            <img src="@/assets/img/slide-1.jpg" alt="Affiliate guys">
+            <div class="color_trick"></div>
+          </div>
+          
+        </div>
+      </section>
     </main>
 </template>
 
@@ -49,6 +61,40 @@ nav {
   }
   .text {
     color: #fff;
+  }
+}
+.images_area{
+  display: flex;
+  .split50{
+    width: 50%;
+    height: 300px;
+  }
+  img{
+    height: 300px;
+  }
+  .left{
+    display: flex;
+    justify-content: flex-end;
+    .colored_area{
+      background-color: var(--coralRed-color);
+      height: 300px;
+      width: 740px;
+      position: relative;
+
+    }
+  }
+  .right{
+    position: relative;
+    overflow: hidden;
+    .color_trick{
+      background-color: var(--coralRed-color);
+      height: 300px;
+      width: 740px;
+      transform: translateY(-551px);
+      rotate: 70deg;
+      position: absolute;
+      left: -950px;
+    }
   }
 }
 </style>
