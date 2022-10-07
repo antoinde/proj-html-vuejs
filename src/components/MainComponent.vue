@@ -6,8 +6,8 @@
       />
       <LearningInviteComponent />
       <RecentCoursesComponent />
+      <PopularCoursesComponent />
 
-      
     </main>
 </template>
 

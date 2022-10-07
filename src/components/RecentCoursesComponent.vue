@@ -53,7 +53,7 @@ export default {
 
 <style lang="scss" scoped>
 section {
-    padding: 50px 0px;
+    padding-top: 50px;
 
     .center-text {
         text-align: center;
