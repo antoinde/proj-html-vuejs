@@ -57,6 +57,9 @@ export default {
   }
   .card{
     width: calc(100% / 4 - 23px);
+    p{
+      line-height: 1.1rem;
+    }
   }
   .email{
     color: grey;
