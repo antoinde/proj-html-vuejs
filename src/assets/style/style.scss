@@ -66,6 +66,13 @@ a{
     text-decoration: none;
     color: black;
 }
+.card{
+    cursor: pointer;
+    opacity: 0.85;
+}
+.card:hover{
+    opacity: 1;
+}
 // -------- #content --------
 body {
     margin: 0;
