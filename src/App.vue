@@ -63,6 +63,9 @@ export default {
             old_price: 199.99,
             new_price: 100
           },
+          //    <i class="fa-solid fa-star"></i>
+          //    <i class="fa-solid fa-star-half-stroke"></i>
+          //    <i class="fa-regular fa-star"></i>
           {
             genre: 'Development',
             path_img: '@/assets/img/246154_d8b0_3-544x322.jpg',
