@@ -5,6 +5,9 @@
       :Cards="Cards"
       />
       <LearningInviteComponent />
+      <RecentCoursesComponent />
+
+      
     </main>
 </template>
 
@@ -12,10 +15,11 @@
 import AffiliateComponent from "./AffiliateComponent.vue";
 import PopularCoursesComponent from "./PopularCoursesComponent.vue";
 import LearningInviteComponent from "./LearningInviteComponent.vue";
+import RecentCoursesComponent from "./RecentCoursesComponent.vue";
 
 export default {
     name: "MainComponent",
-    components: { AffiliateComponent, PopularCoursesComponent, LearningInviteComponent },
+    components: { AffiliateComponent, PopularCoursesComponent, LearningInviteComponent, RecentCoursesComponent },
     props: {
       Cards: Array
     }
