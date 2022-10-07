@@ -27,7 +27,12 @@
         </nav>
         <div class="images_area">
           <div class="split50 left">
-            <div class="colored_area"></div>
+            <div class="colored_area">
+              <div class="text">
+                <h1>Udemy Affiliate Sales</h1>
+                <p>Monetize your audience and attract new customers with Udemy!</p>
+              </div>
+            </div>
           </div>
           <div class="split50 right">
             <img src="@/assets/img/slide-1.jpg" alt="Affiliate guys">
@@ -77,9 +82,28 @@ nav {
     justify-content: flex-end;
     .colored_area{
       background-color: var(--coralRed-color);
+      color: #fff;
       height: 300px;
       width: 740px;
       position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      p{
+        width: 400px;
+        line-height: 1.6rem;
+        font-weight: 600;
+      }
+      h1{
+        font-size: 2.5rem;
+        margin-bottom: 0;
+      }
+      .text{ //text position (manually)
+        transform: translateX(90px);
+        position: relative;
+        top: -20px;
+      }
 
     }
   }
