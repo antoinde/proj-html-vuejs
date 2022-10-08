@@ -6,6 +6,7 @@
       <RecentCoursesComponent />
       <PopularCoursesComponent />
       <InstructorOrBusinessComponent />
+      <TestimonialComponent />
 
     </main>
 </template>
@@ -17,17 +18,19 @@ import LearningInviteComponent from "./LearningInviteComponent.vue";
 import RecentCoursesComponent from "./RecentCoursesComponent.vue";
 import PopularCoursesComponent from "./PopularCoursesComponent.vue";
 import InstructorOrBusinessComponent from "./InstructorOrBusinessComponent.vue";
+import TestimonialComponent from "./TestimonialComponent.vue";
 
 export default {
     name: "MainComponent",
-    components: { 
-      AffiliateComponent,
-      PopularDevCoursesComponent,
-      LearningInviteComponent, 
-      RecentCoursesComponent, 
-      PopularCoursesComponent, 
-      InstructorOrBusinessComponent
-    },
+    components: {
+    AffiliateComponent,
+    PopularDevCoursesComponent,
+    LearningInviteComponent,
+    RecentCoursesComponent,
+    PopularCoursesComponent,
+    InstructorOrBusinessComponent,
+    TestimonialComponent
+},
     props: {
       Cards: Array
     }
