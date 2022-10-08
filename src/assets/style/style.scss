@@ -29,6 +29,8 @@
     //My adds
     --search-button-color: #457992;
     --footer-nav-color: #273044;
+    --roseButtonHover-color: #e53d48;
+    --roseButton3Hover-color: #46c197;
 }
 // -------- #utilities --------
 .separator{
@@ -53,7 +55,11 @@ a.typeButtonRose{
     padding: 15px;
     border-radius: 25px;
     font-weight: 700;
+    font-size: 0.8rem;
     background-color: var(--coralRed-color);
+}
+a.typeButtonRose:hover{
+    background-color: var(--roseButtonHover-color);
 }
 // -------- #generals --------
 img{

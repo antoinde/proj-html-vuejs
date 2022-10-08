@@ -63,5 +63,9 @@ export default {
         width: 33%;
         margin-right: 30px;
     }
+    .typeButtonRose:hover{
+        background-color: var(--roseButton3Hover-color);
+    }
+    // #46c197
 }
 </style>

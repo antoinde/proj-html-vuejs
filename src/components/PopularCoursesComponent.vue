@@ -66,6 +66,7 @@ section {
         }
         .square:hover{
             background-color: var(--search-button-color);
+            color: #fff;
         }
     }
 }
