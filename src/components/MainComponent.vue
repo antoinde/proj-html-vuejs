@@ -7,6 +7,7 @@
       <PopularCoursesComponent />
       <InstructorOrBusinessComponent />
       <TestimonialComponent />
+      <LateralTools />
 
     </main>
 </template>
@@ -19,6 +20,7 @@ import RecentCoursesComponent from "./RecentCoursesComponent.vue";
 import PopularCoursesComponent from "./PopularCoursesComponent.vue";
 import InstructorOrBusinessComponent from "./InstructorOrBusinessComponent.vue";
 import TestimonialComponent from "./TestimonialComponent.vue";
+import LateralTools from "./LateralTools.vue";
 
 export default {
     name: "MainComponent",
@@ -29,7 +31,8 @@ export default {
     RecentCoursesComponent,
     PopularCoursesComponent,
     InstructorOrBusinessComponent,
-    TestimonialComponent
+    TestimonialComponent,
+    LateralTools
 },
     props: {
       Cards: Array
